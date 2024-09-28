@@ -25,7 +25,7 @@
 
 
   <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="icon" type="image/x-icon" href="static/images/MSL.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -57,17 +57,21 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://cunxid.github.io/" target="_blank">Cunxi Dai</a><sup>*</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="https://infas12.github.io/" target="_blank">Xiaohan Liu</a><sup>*</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="https://scholar.google.com/citations?user=o9aFV8cAAAAJ&hl=en&oi=ao" target="_blank">Koushil Sreenath</a>,</span>
+                    <span class="author-block">
+                      <a href="https://zyliatzju.github.io/" target="_blank">Zhongyu Li</a>,</span>
+                      <span class="author-block">
+                        <a href="https://scholar.google.com/citations?user=U5ZPAIcAAAAJ&hl=en" target="_blank">Ralph Hollis</a>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">Carnegie Mellon University<br>University of California, Berkeley</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution</small></span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -83,27 +87,9 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
 
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
+
+
 
                 <!-- ArXiv abstract Link -->
                 <span class="link-block">
@@ -130,11 +116,11 @@
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
         <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
+        <source src="static/videos/Full_ICRA_Video.mp4"
         type="video/mp4">
       </video>
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        <!-- Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.  -->
       </h2>
     </div>
   </div>
@@ -149,7 +135,22 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            This paper presents a framework for interactive
+navigation using adaptive non-prehensile mobile manipulation.
+A key challenge is handling objects with unknown dynamics,
+which are difficult to infer from visual observation. To address
+this, we propose a method for learning adaptive dynamics via
+a learned SE(2) dynamics representation of common movable
+indoor objects. This adaptive model is integrated into Model
+Predictive Path Integral (MPPI) control to guide the robot’s
+interactions. The learned dynamics also inform decision-making
+for tasks like navigating around non-manipulable objects.
+Our approach is validated in both simulation and real-world
+scenarios, demonstrating its ability to accurately represent
+object dynamics and effectively manipulate various objects.
+We further highlight its success in Navigation Among Movable
+Objects (NAMO) task by deploying the proposed framework
+on a dynamically balancing mobile robot, Shmoobot.
           </p>
         </div>
       </div>
@@ -166,32 +167,39 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/Interactivenavigation.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          <b>Interactive Navigation with Adaptive Pushing:</b> Time-lapse of
+          interactive navigation with adaptive pushing on Shmoobot, demonstrating
+          the robot’s ability to either push or plan a collision-free path (CF-Path)
+          to navigate around an obstructing object based on its manipulability. The
+          figure showcases two common object types: a light, manipulable box and a
+          non-manipulable wheeled cart (e.g., a wheelchair with locked wheels).
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/framework.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
+          <b>Overall framework:</b> In the offline phase, we first create simulation environments in Bullet [5] with three types of objects with randomized
+physical properties and train the basis function ψ and robot model R. The learned ψ are then used as parts of the adaptive dynamics, as described in
+Section.III. In step 2, we utilize the adaptive dynamics to formulate the controller for interactive navigation. Given a pre-built map, the controller switches
+between adaptive pushing and collision-free navigation based on whether the object is manipulable or is blocking the way. The details of the interactive
+navigation framework are described in Sec. IV. Finally, the controller sends control actions to the low-level controller of Shmoobot as described in Sec. VI.
+On the bottom-right corner, we show the schematic of Shmoobot and the necessary frames and notations.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/modelaccuracy.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
-         Third image description.
+          <b></b>Adaptive Dynamics Accuracy:</b>  We compared the accuracy of the adaptive dynamics model O prediction before and after learning on 8 objects
+          whose dynamics were not seen during training. (m is the object’s mass, μ is the planar friction, σ is the wheel’s rotational friction and the red block on
+          the data icon indicates a locked wheel). The left side is a visualization of the model roll-out of the different horizons, the interaction force is visualized
+          in blue. We further compared with other models discussed in Sec. V of which we listed the prediction MSE at the bottom.
        </h2>
      </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
+
   </div>
 </div>
 </div>
@@ -201,50 +209,29 @@
 
 
 
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
-
 
 <!-- Video carousel -->
+<!--
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
+      <h2 class="title is-3">Adaptive Pushing Experiments</h2>
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-video1">
           <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
             <source src="static/videos/carousel1.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video2">
           <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
             <source src="static/videos/carousel2.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
           <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
+
             <source src="static/videos/carousel3.mp4"
             type="video/mp4">
           </video>
@@ -252,7 +239,7 @@
       </div>
     </div>
   </div>
-</section>
+</section>-->
 <!-- End video carousel -->
 
 
@@ -260,26 +247,14 @@
 
 
 
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
 
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
 
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>BibTex not yet available</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
@@ -293,8 +268,7 @@
 
           <p>
             This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+
           </p>
 
         </div>
